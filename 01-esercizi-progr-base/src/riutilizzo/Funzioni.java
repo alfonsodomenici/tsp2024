@@ -35,6 +35,24 @@
  *      return risultato
  * end
  * 
+ * 
+ * start
+ *      leggi n
+ *      risultato = true
+*       if(n<=2) then
+ *          risultato = false
+ *      end if
+ * 
+*       conta = 2
+*       while(conta < n and risultato) do
+*           if(resto di n/conta == 0) then
+*               risultato=false
+            end if
+*           conta++
+*       end while
+*       stampa risultato
+ *      
+ * 
  */
 package riutilizzo;
 
@@ -54,14 +72,31 @@ public class Funzioni {
     }
 
     public static boolean isNumeroPrimo(int num) {
-        if (num == 0)
-            return false;
+        boolean risultato = true;
+        if (num <= 2) {
+            risultato = false;
+        }
         int conta = 2;
-        while (conta < num) {
-            if (num % conta == 0)
-                return false;
+        while (conta < num && risultato) {
+            if (num % conta == 0) {
+                risultato = false;
+            }
             conta++;
         }
-        return true;
+        return risultato;
     }
+
+    /*
+     * public static boolean isNumeroPrimo(int num) {
+     * if (num == 0)
+     * return false;
+     * int conta = 2;
+     * while (conta < num) {
+     * if (num % conta == 0)
+     * return false;
+     * conta++;
+     * }
+     * return true;
+     * }
+     */
 }
