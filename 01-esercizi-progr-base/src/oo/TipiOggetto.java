@@ -18,6 +18,7 @@ public class TipiOggetto {
         
         System.out.println(MiaMath.somma(3,6,7));
        
+        
     }
 }
 

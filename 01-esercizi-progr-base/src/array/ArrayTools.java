@@ -4,6 +4,10 @@ import java.util.Objects;
 
 public class ArrayTools {
 
+    private ArrayTools(){
+
+    }
+
     public static void linearSequence(int[] data, int a, int b) {
         data = Objects.requireNonNullElse(data,new int[0]);
         int i = 0;
@@ -27,4 +31,5 @@ public class ArrayTools {
             i++;
         }
     }
+
 }

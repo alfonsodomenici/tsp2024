@@ -1,5 +1,8 @@
 package array;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 import riutilizzo.Funzioni;
 
 public class App {
@@ -33,6 +36,7 @@ public class App {
         }
         boolean ris = Funzioni.isNumeroPrimo(359000);
         System.out.println(ris);
+
     }
 
     public static void m1() {
