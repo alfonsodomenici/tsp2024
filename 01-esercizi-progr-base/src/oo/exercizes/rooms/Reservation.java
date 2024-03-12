@@ -71,7 +71,7 @@ public class Reservation {
         return isReserved(f) || isReserved(t) || (f.isBefore(from) && t.isAfter(to));
     }
 
-    private boolean isReserved(LocalDate d) {
+    public boolean isReserved(LocalDate d) {
         return from.isEqual(d) || to.isEqual(d) || (d.isAfter(from) && d.isBefore(to));
     }
 
